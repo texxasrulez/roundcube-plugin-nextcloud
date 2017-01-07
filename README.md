@@ -30,3 +30,7 @@ Configuration
 
 * In Roundcube plugin you need to rename config.inc.php.dist to config.inc.php. And configure your nextcloud URL and a random DES key of 24 characters.
 * In nextcloud, you need to edit the config.php file and add a 'roundcube_nextcloud_des_key' property with the same DES key.
+
+Known Issues:
+-------
+* Will not automatically login at this point. I just started this thing.
