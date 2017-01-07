@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin ownCloud
+ * Plugin nextCloud
  *
- * Display your ownCloud instance in Roundcube w/ auth
+ * Display your nextCloud instance in Roundcube w/ auth
  *
  * @author Thomas Payen <thomas.payen@i-carre.net>
  *
