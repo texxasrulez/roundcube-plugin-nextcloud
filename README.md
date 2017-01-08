@@ -33,4 +33,5 @@ Configuration
 
 Known Issues:
 -------
-* Will not automatically login at this point. I just started this thing.
+* Will not automatically login at this point. It does logout of your nextcloud seesion when you logout of Roundcube. I just started this thing.
+* Multiple Calendars saved with same color (Use "UPDATE `caldav_calendars` SET color = substring(MD5(RAND()), -6);" to assign radmon colors after initial sync of calendars.
