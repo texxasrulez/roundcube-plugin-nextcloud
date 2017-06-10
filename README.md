@@ -15,6 +15,7 @@ Install
 
 * Place this plugin folder into plugins directory of Roundcube
 * Add nextcloud to $config['plugins'] in your Roundcube config
+* Upload contents of upload_to_nextcloud_apps into your apps directory for Nextcloud and enable plugin within Nextcloud.
 
 NB: When downloading the plugin from GitHub you will need to create a
 directory called nextcloud and place the files in there,
