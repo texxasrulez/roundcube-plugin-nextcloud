@@ -1,13 +1,13 @@
 ﻿#taskbar a.button-nextcloud span.button-inner
 {
-  background: url(images/nextcloud_button_white.png) 3px 0px no-repeat;
+  background: url(images/nextcloud_button.png) 3px 0px no-repeat;
   height: 18px;
 }
 
 #taskbar a.button-nextcloud:hover span.button-inner,                                                                                                                      
 #taskbar a.button-nextcloud.button-selected span.button-inner
 {
-  background: url(images/nextcloud_button_blue.png) 3px 0px no-repeat;
+  background: url(images/nextcloud_button_selected.png) 3px 0px no-repeat;
   height: 18px;
 }
 
