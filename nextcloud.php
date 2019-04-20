@@ -54,7 +54,8 @@ class nextcloud extends rcube_plugin {
             'class' => 'button-nextcloud',
             'classsel' => 'button-nextcloud button-selected',
             'innerclass' => 'button-inner',
-            'label' => 'nextcloud.task'
+            'label' => 'nextcloud.task',
+            'type' => 'link'
     ), 'taskbar');
 
     // If task is nextcloud load the frame
