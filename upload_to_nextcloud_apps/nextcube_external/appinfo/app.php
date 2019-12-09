@@ -1,25 +1,28 @@
 <?php
-// Login from roundcube
-if (isset($_POST['rc_user']) && isset($_POST['rc_pwd'])) {
-  // Check if another user is not logged in
+$userSession = \OC::$server->getUserSession();
 
-  OC_App::loadApps();
-  // setup extra user backends
-  OC_User::setupBackends();
+// Login from roundcube
+if (isset($_POST["rc_user"]) && isset($_POST["rc_pwd"])) {
+  // Check if another user is not logged in
+  if ($userSession->isLoggedIn() && $userSession->getUser()->getUID() != $_POST["rc_user"]) {
+    $userSession->logout();
+  }
 
   // DES key decrypt
   $des = new DES();
 
-  if (OC_User::getUserSession()->login(( string ) $_POST['rc_user'], ( string ) $des->decrypt($_POST['rc_pwd']))) {
-    OC_User::unsetMagicInCookie();
-    OC_Util::redirectToDefaultPage();
-    exit();
+  $uid = ( string ) $_POST["rc_user"];
+  $password = ( string ) $des->decrypt($_POST["rc_pwd"]);
+  if ($userSession->login($uid, $password)) {
+    $user = $userSession->getUser();
+    $userSession->createSessionToken(\OC::$server->getRequest(), $user->getUID(), $uid, $password, \OC\Authentication\Token\IToken::REMEMBER);
+    $userSession->updateTokens($user->getUID(), $password);
   }
 }
 
 // Logout from roundcube
 if (isset($_GET['rc_logout']) && isset($_GET['from_roundcube'])) {
-  OC_User::getUserSession()->logout();
+  $userSession->logout();
 }
 
 class DES {
@@ -37,8 +40,7 @@ class DES {
     }
 
     $cipher = $base64 ? base64_decode($cipher) : $cipher;
-    $ocConfig = \OC::$server->getConfig();
-    $ckey = OCP\Config::getSystemValue($key);
+    $ckey = \OC::$server->getConfig()->getSystemValue($key);
 
     if (function_exists('openssl_decrypt')) {
       $method = 'DES-EDE3-CBC';

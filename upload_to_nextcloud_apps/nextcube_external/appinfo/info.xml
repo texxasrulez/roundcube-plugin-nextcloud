@@ -2,12 +2,12 @@
 <info>
 	<id>nextcube_external</id>
 	<name>External login for Roundcube</name>
-	<description>Use login password from Roundcube for seamless integration.</description>
+	<description>Use login password from Roundcube</description>
 	<licence>AGPL</licence>
-	<author>Gene Hawkins</author>
-	<version>0.2</version>
+	<author>Thomas Payen</author>
+	<version>0.1</version>
 	<dependencies>
-		<nextcloud min-version="7.0.5" max-version="12.0" />
+		<nextcloud min-version="9" />
 	</dependencies>
 	<shipped>true</shipped>
 </info>

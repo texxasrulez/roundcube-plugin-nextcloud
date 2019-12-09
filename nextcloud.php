@@ -50,12 +50,12 @@ class nextcloud extends rcube_plugin {
     // Create & register the task
     $this->register_task('nextcloud');
     $this->add_button(array(
-            'command' => 'nextcloud',
-            'class' => 'button-nextcloud',
-            'classsel' => 'button-nextcloud button-selected',
+            'command'    => 'nextcloud',
+            'class'      => 'button-nextcloud',
+            'classsel'   => 'button-nextcloud button-selected',
             'innerclass' => 'button-inner',
-            'label' => 'nextcloud.task',
-            'type' => 'link'
+            'label'      => 'nextcloud.task',
+            'type'       => 'link'
     ), 'taskbar');
 
     // If task is nextcloud load the frame
