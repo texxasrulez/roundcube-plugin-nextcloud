@@ -34,7 +34,7 @@ Configuration
 
 Known Issues:
 -------
-* Will not automatically login at this point. It does logout of your nextcloud seesion when you logout of Roundcube. I just started this thing.
+* Will not automatically login or logout at this point. It is a head scratcher because from what I have read, the code should work ... :-(
 
 :moneybag: **Donations** :moneybag:
 
