@@ -4,7 +4,7 @@
     "description": "Embed nextCloud inside your Roundcube with user authentication",
     "homepage": "https://github.com/texxasrulez/roundcube-plugin-nextcloud",
     "license": "GPL-3.0-only",
-    "version": "0.2",
+    "version": "0.3",
     "authors": [
         {
             "name": "Gene Hawkins",
@@ -24,7 +24,7 @@
     },
     "extra": {
         "roundcube": {
-            "min-version": "1.1"
+            "min-version": "1.4"
         }
     }
 }

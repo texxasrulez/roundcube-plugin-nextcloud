@@ -4,7 +4,7 @@
 	<name>External login for Roundcube</name>
 	<description>Use login password from Roundcube</description>
 	<licence>AGPL</licence>
-	<author>Thomas Payen</author>
+	<author>Gene Hawkins</author>
 	<version>0.1</version>
 	<dependencies>
 		<nextcloud min-version="9" />
