@@ -1,4 +1,4 @@
-# Roundcube-Plugin-nextcloud
+# Plugin to embed NextCloud within Roundcube
 
 Open nextcloud instance directly in Roundcube with authentication
 
