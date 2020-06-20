@@ -67,10 +67,10 @@
     background-position: 0 -24px;
 }
 .menuentry {
-    color: #fff!important;
+    color: inherit!important;
 }
 .menuentry:hover {
-    background: #0883d0;
+    background: inherit;
 }
 #notestoolbar {
     top: -2px;
@@ -78,8 +78,8 @@
     height: 58px;
 }
 .toolbar a.button:focus {
-    color: #fff;
-    background-color: rgba(30, 150, 192, 0.5)!important;
+    color: inherit;
+    background-color: inherit!important;
     border-radius: 3px;
 }
 #notestoolbar a.button {

@@ -1,0 +1,13 @@
+﻿/* CSS for NextCloud "Classic"Skin */
+
+﻿.minimal #mainscreen {
+    top: 52px;
+}
+
+#mainscreen {
+    position: absolute;
+    top: 71px;
+    left: 0px;
+    right: 2px;
+    bottom: 2px;
+}
