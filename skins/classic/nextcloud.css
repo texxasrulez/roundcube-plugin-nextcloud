@@ -1,7 +1,7 @@
-﻿/* CSS for NextCloud "Classic"Skin */
+﻿/* CSS for NextCloud "Classic" Skin */
 
 #taskbar a.button-nextcloud {
-  background: url(images/nextcloud_button.png) 0px -1px no-repeat;
+  background: url(images/nextcloud_button.png) 0px 0px no-repeat;
 }
 
 #page-switch .join-button, #page-switch .more-button {

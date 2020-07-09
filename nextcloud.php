@@ -130,6 +130,7 @@ class nextcloud extends rcube_plugin {
   private function login_nextcloud() {
     $rcmail = rcmail::get_instance();
     $nextcloud_url = $rcmail->config->get('nextcloud_url');
+//	$nextcloud_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     // Env variables
     $rcmail->output->set_env('nextcloud_username', $rcmail->user->get_username());
     $rcmail->output->set_env('nextcloud_password', urlencode($this->encrypt($rcmail->get_user_password())));
