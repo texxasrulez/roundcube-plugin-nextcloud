@@ -24,7 +24,6 @@ downloaded archive.
 
 * To avoid cross-domain errors you should use the same url (domain), no subdomains either, for Roundcube and NextCloud (See the [reverse proxy documentation](reverseproxy.md), to use nextcloud and Roundcube on separate servers with Apache)
 * Add and enable "roundcube_external" apps to your nextcloud instance (in nextcloud/apps/)
-* You can also add melanie2 theme to nextcloud
 
 Configuration
 -------------
